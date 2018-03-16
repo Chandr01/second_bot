@@ -174,9 +174,9 @@ def textMessage(bot, update):
             bot.send_message(chat_id=update.message.chat_id, text=text)
 
         elif now_away >= 3:
-            text_save = u'{}, попробовал уйти когда 3-е отстутствуют'.format(user_name_id)
+            text_save = u'{}, попробовал уйти когда 5-po отстутствуют'.format(user_name_id)
             save_file(text_save)
-            text = '3-ое уже отсутствуют'
+            text = '5-pо уже отсутствуют'
             bot.send_message(chat_id=update.message.chat_id, text=text)
 
         else:

@@ -163,7 +163,7 @@ def textMessage(bot, update):
     l = [int(i) for i in str(chat_id)]
     # print(l)
     # int(sum(l) / 9)
-    adm_ids = [256737675, 429070522, 416966362, 432725291, 166998097, 420588132, 290908902, 421223508]
+    adm_ids = [166998097, 455433124, 327139621, 408102447, 449478143, 439917501, 229455912, 201178397]
     user_name_id = '{}[{}]'.format(user['first_name'], int(sum(l) / 9))
     if bool(list(set(text_away) & set(message.lower().split(' ')))):
         now_away = get_statuses()

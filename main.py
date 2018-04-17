@@ -163,7 +163,7 @@ def textMessage(bot, update):
     l = [int(i) for i in str(chat_id)]
     # print(l)
     # int(sum(l) / 9)
-    adm_ids = [166998097, 455433124, 327139621, 408102447, 449478143, 439917501, 229455912, 201178397]
+    adm_ids = [166998097, 455433124, 327139621, 408102447, 449478143, 439917501, 229455912, 201178397, 390371888]
     user_name_id = '{}[{}]'.format(user['first_name'], int(sum(l) / 9))
     if bool(list(set(text_away) & set(message.lower().split(' ')))):
         now_away = get_statuses()
@@ -173,10 +173,10 @@ def textMessage(bot, update):
             save_file(text_save)
             bot.send_message(chat_id=update.message.chat_id, text=text)
 
-        elif now_away >= 3:
-            text_save = u'{}, попробовал уйти когда 5-po отстутствуют'.format(user_name_id)
+        elif now_away >= 7:
+            text_save = u'{}, попробовал уйти когда 7-po отстутствуют'.format(user_name_id)
             save_file(text_save)
-            text = '5-pо уже отсутствуют'
+            text = '7-pо уже отсутствуют'
             bot.send_message(chat_id=update.message.chat_id, text=text)
 
         else:
